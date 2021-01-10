@@ -2,17 +2,20 @@
 
 :root {
   --primary-color: purple;
+  --dark-grey: #6b7280;
+  --off-white: #f3f4f6;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
+  margin: 0px;
 }
 hr {
   margin: 2rem, 0rem;
 }
 /* container */
 .container {
-  padding: 0rem, 1rem;
+  padding: 0rem 1rem;
 }
 .container-center {
   max-width: 600px;
@@ -20,7 +23,7 @@ hr {
 }
 .link {
   text-decoration: none;
-  padding: 0.5ren, 1ren;
+  padding: 0.5rem 1rem;
 }
 
 .link-primary {
@@ -40,4 +43,64 @@ hr {
 }
 .list-item-inline {
   display: inline;
+  padding: 0rem 0.5rem;
+}
+/* navigation */
+.navigation {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.navigation .link {
+  color: white;
+}
+.navigation .nav-pills {
+  text-align: right;
+}
+.navigation .nav-brand {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.navigation .link-active {
+  font-weight: bold;
+}
+/* header */
+.dev {
+  padding: 2rem;
+}
+.dev .dev-img {
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+.dev .dev-heading {
+  font-size: 2rem;
+  color: var(--dark-grey);
+  padding-top: 1rem;
+  text-align: center;
+}
+.dev .dev-heading .heading-inv {
+  color: var(--primary-color);
+}
+
+/* section */
+.section {
+  padding: 2rem;
+}
+.section h1 {
+  text-align: center;
+}
+.ow {
+  background-color: var(--off-white);
+}
+.footer {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 1rem;
+}
+.footer .link {
+  color: white;
 }
